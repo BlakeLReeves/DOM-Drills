@@ -39,4 +39,14 @@ document.addEventListener('DOMContentLoaded', function () {
     h6.className = 'h6';
 
     document.body.appendChild(div);
+
+    let colors = ['red', 'blue', 'green', 'black', 'purple', 'pink', 'grey', 'orange'];
+function randomColor() {
+    let color = colors[Math.floor(Math.random() * colors.length)];
+    return color;
+}
+h1.addEventListener('dblclick', function () {
+   let randomColor = randomColor();
+   console.log(randomColor);
+})
 })
