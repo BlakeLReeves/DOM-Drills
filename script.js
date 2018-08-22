@@ -41,12 +41,12 @@ document.addEventListener('DOMContentLoaded', function () {
     document.body.appendChild(div);
 
     let colors = ['red', 'blue', 'green', 'black', 'purple', 'pink', 'grey', 'orange'];
-function randomColor() {
-    let color = colors[Math.floor(Math.random() * colors.length)];
-    return color;
+function getRandomColor() {
+    let rcolor = colors[Math.floor(Math.random() * colors.length)];
+    return rcolor;
 }
 h1.addEventListener('dblclick', function () {
-   let randomColor = randomColor();
+   let randomColor = getRandomColor();
    console.log(randomColor);
 })
 })
