@@ -50,8 +50,13 @@ h1.addEventListener('dblclick', function () {
    h1.style.color = randomColor; 
 })
 function insertListItem() {
+    let list = document.createElement('li');
+    let olList = document.createElement('ol');
     let text = document.createTextNode('This is list item 1');
-    button.appendChild(text);
+    list.appendChild(text);
+    document.body.appendChild(list);
+    olList.appendChild(list);
+    document.body.appendChild(olList);
 }
 let listItem = insertListItem;
 })
