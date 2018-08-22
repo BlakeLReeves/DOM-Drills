@@ -47,6 +47,6 @@ function getRandomColor() {
 }
 h1.addEventListener('dblclick', function () {
    let randomColor = getRandomColor();
-   console.log(randomColor);
+   h1.style.color = randomColor; 
 })
 })
