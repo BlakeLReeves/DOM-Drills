@@ -56,5 +56,7 @@ function insertListItem() {
     list.appendChild(text);
     olList.appendChild(list);
 }
-let listItem = insertListItem();
+document.getElementsByClassName('btn')[0].addEventListener('click', function () {
+    insertListItem();
+})
 })
