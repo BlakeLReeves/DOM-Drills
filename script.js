@@ -55,6 +55,7 @@ function insertListItem() {
     let text = document.createTextNode('This is list item 1');
     list.appendChild(text);
     olList.appendChild(list);
+    document.body.appendChild(olList);
 }
 document.getElementsByClassName('btn')[0].addEventListener('click', function () {
     insertListItem();
