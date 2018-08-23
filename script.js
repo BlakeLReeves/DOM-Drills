@@ -52,12 +52,12 @@ h1.addEventListener('dblclick', function () {
 
 let x = 1;
 function insertListItem() {
-    let olList = document.createElement('ol');
+    let ulList = document.createElement('ul');
     let list = document.createElement('li');
     let text = document.createTextNode('This is list item ' + [x++]);
     list.appendChild(text);
-    olList.appendChild(list);
-    document.body.appendChild(olList);
+    ulList.appendChild(list);
+    document.body.appendChild(ulList);
 }
 document.getElementsByClassName('btn')[0].addEventListener('click', function () {
     insertListItem();
