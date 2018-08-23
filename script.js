@@ -57,7 +57,8 @@ function insertListItem() {
     let text = document.createTextNode('This is list item ' + [x++]);
     list.appendChild(text);
     ulList.appendChild(list);
-    document.body.appendChild(ulList);ulList.addEventListener('click', function() {
+    document.body.appendChild(ulList);
+    ulList.addEventListener('click', function() {
         let randomColor = getRandomColor();
         ulList.style.color = randomColor;
     })
