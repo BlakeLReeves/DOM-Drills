@@ -50,6 +50,31 @@ h1.addEventListener('dblclick', function () {
    h1.style.color = randomColor; 
 })
 
+h2.addEventListener('dblclick', function () {
+    let randomColor = getRandomColor();
+    h2.style.color = randomColor; 
+ })
+
+ h3.addEventListener('dblclick', function () {
+    let randomColor = getRandomColor();
+    h3.style.color = randomColor; 
+ })
+
+ h4.addEventListener('dblclick', function () {
+    let randomColor = getRandomColor();
+    h4.style.color = randomColor; 
+ })
+
+ h5.addEventListener('dblclick', function () {
+    let randomColor = getRandomColor();
+    h5.style.color = randomColor; 
+ })
+
+ h6.addEventListener('dblclick', function () {
+    let randomColor = getRandomColor();
+    h6.style.color = randomColor; 
+ })
+
 let x = 1;
 function insertListItem() {
     let ulList = document.createElement('ul');
@@ -58,10 +83,15 @@ function insertListItem() {
     list.appendChild(text);
     ulList.appendChild(list);
     document.body.appendChild(ulList);
-    ulList.addEventListener('click', function() {
+
+    list.addEventListener('click', function() {
         let randomColor = getRandomColor();
         ulList.style.color = randomColor;
     })
+
+    list.addEventListener('dblclick', function(){
+        this.remove();
+    });
 }
 document.getElementsByClassName('btn')[0].addEventListener('click', function () {
     insertListItem();
